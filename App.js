@@ -6,62 +6,24 @@
  * @flow strict-local
  */
 
- // import React from 'react';
- // import { View, Text, Button, StyleSheet, TextInput } from 'react-native';
- //
- // const facebook = () => {
- //   return (
- //     <View style={styles.container}>
- //     <Text style={styles.textStyle}>facebook</Text>
- //     <TextInput style={styles.emailStyle} placeholder="Email"></TextInput>
- //     <TextInput style={styles.emailStyle} placeholder="password"></TextInput>
- //     </View>
- //     );
- // };
- //
- // const styles = StyleSheet.create({
- //   container: {
- //     flex: 1,
- //     backgroundColor: '#43609C',
- //     justifyContent: 'center',
- //     alignItems: 'center',
- //     paddingRight: 20,
- //     paddingLeft: 20
- //   },
- //   textStyle: {
- //    fontSize: 50,
- //    marginBottom: 60,
- //    color: '#fff',
- //    fontWeight: 'bold'
- //   },
- //   emailStyle: {
- //     backgroundColor: '#fff',
- //     width: '100%',
- //     paddingTop: 15,
- //     paddingBottom: 15,
- //     paddingLeft: 10,
- //     marginTop: 20,
- //   }
- //   })
- //
- // export default facebook;
-
 import React from 'react';
 import { View, Text, TextInput, StyleSheet } from 'react-native';
 
 const LogIn = () => {
 return (
   <View style={styles.container}>
-<Text style={styles.textStyle}>Facebook</Text>
+<Text style={styles.textStyle}>facebook</Text>
 <TextInput style={styles.textInputStyle} placeholder="Email"></TextInput>
-<TextInput placeholder="Password"></TextInput>
+<TextInput style={styles.textInputStyle}
+placeholder="Password"
+secureTextEntry={true}></TextInput>
   </View>
   );
 };
 
 const styles = StyleSheet.create({
   textStyle: {
-    fontSize: 30,
+    fontSize: 40,
     color: '#fff',
     fontWeight: 'bold',
     marginBottom: 50
@@ -76,6 +38,12 @@ const styles = StyleSheet.create({
   },
   textInputStyle: {
     backgroundColor: '#fff',
+    width: '100%',
+    paddingTop: 15,
+    paddingBottom: 15,
+    paddingLeft: 10,
+    fontSize: 20,
+    marginBottom: 10
   }
   })
 
