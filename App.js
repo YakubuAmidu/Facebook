@@ -53,7 +53,8 @@ const LogIn = () => {
 return (
   <View style={styles.container}>
 <Text style={styles.textStyle}>Facebook</Text>
-<TextInput placeholder="Email"></TextInput>
+<TextInput style={styles.textInputStyle} placeholder="Email"></TextInput>
+<TextInput placeholder="Password"></TextInput>
   </View>
   );
 };
@@ -62,7 +63,8 @@ const styles = StyleSheet.create({
   textStyle: {
     fontSize: 30,
     color: '#fff',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    marginBottom: 50
   },
   container: {
     flex: 1,
@@ -71,6 +73,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingLeft: 20,
     paddingRight: 20
+  },
+  textInputStyle: {
+    backgroundColor: '#fff',
   }
   })
 
