@@ -13,10 +13,12 @@ const LogIn = () => {
 return (
   <View style={styles.container}>
 <Text style={styles.textStyle}>facebook</Text>
-<TextInput style={styles.textInputStyle} placeholder="Email"></TextInput>
+<TextInput style={styles.textInputStyle}
+placeholder="Email"></TextInput>
 <TextInput style={styles.textInputStyle}
 placeholder="Password"
 secureTextEntry={true}></TextInput>
+<Text style={styles.textStyle2}>Log In</Text>
   </View>
   );
 };
