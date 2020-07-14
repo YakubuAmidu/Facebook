@@ -61,7 +61,8 @@ return (
 const styles = StyleSheet.create({
   textStyle: {
     fontSize: 30,
-    color: '#fff'
+    color: '#fff',
+    fontWeight: 'bold'
   },
   container: {
     flex: 1,
