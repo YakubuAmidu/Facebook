@@ -45,3 +45,32 @@
  //   })
  //
  // export default facebook;
+
+import React from 'react';
+import { View, Text, TextInput, StyleSheet } from 'react-native';
+
+const LogIn = () => {
+return (
+  <View style={styles.container}>
+<Text style={styles.textStyle}>Facebook</Text>
+<TextInput placeholder="Email"></TextInput>
+  </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  textStyle: {
+    fontSize: 30,
+    color: '#fff'
+  },
+  container: {
+    flex: 1,
+    backgroundColor: "#43609C",
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingLeft: 20,
+    paddingRight: 20
+  }
+  })
+
+export default LogIn;
