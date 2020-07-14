@@ -19,6 +19,7 @@ placeholder="Email"></TextInput>
 placeholder="Password"
 secureTextEntry={true}></TextInput>
 <Text style={styles.textStyle2}>Log In</Text>
+<Text style={styles.textStyle3}>Sign Up for Facebook</Text>
   </View>
   );
 };
@@ -46,6 +47,22 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     fontSize: 20,
     marginBottom: 10
+  },
+  textStyle2: {
+    backgroundColor: '#324875',
+    color: '#fff',
+    width: '100%',
+    textAlign: 'center',
+    paddingTop: 15,
+    paddingBottom: 15,
+    marginBottom: 150,
+    fontSize: 20,
+    fontWeight: 'bold'
+  },
+  textStyle3: {
+    color: '#fff',
+    textDecorationLine: 'underline',
+    fontWeight: 'bold'
   }
   })
 
